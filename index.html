@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Sainath's Portfolio</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <a href="#about" class="logo"><span>Sainath Machha</span></a>
+
+        <ul class="nav-links">
+            <li>
+                <a href="#about">About</a>
+            </li>
+            <li>
+                <a href="#projects">Projects</a>
+            </li>
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+        </ul>
+
+        <i class="fa-solid fa-circle-chevron-down" id="menu-icon"></i>
+
+        <button class="visit-btn">Visit Github</button>
+
+    </header>
+
+    <section id="about" class="about">
+        <div class="about-container">
+            <img src="/portfolio/static/profile.jpg" class="profile" alt="">
+            <div class="info-box">
+                <div class="text">
+                    <h3>Hi, I'm</h3>
+                    <h1>Sainath Machha</h1>
+                    <span>Software Developer</span>
+                    <p class="info">Motivated and dedicated computer science student with strong proficiency in Java and SQL. Eager to apply academic knowledge to real-world projects and gain handson experience in software development.</p>
+                </div>
+
+                <div class="btn-group">
+                    <div class="btn" id="download-cv">Download CV</div>
+                    <div class="btn" id="contact-btn">Contact</div>
+                </div>
+
+                <div class="socials">
+                    <i class="fa-brands fa-github" onclick="visit()"></i>
+                    <i class="fa-brands fa-linkedin" onclick="visitLinkedIn()"></i>
+                    <i class="fa-brands fa-leetcode" onclick="visitLeetcode()">
+                        <img class="leetcode" src="/portfolio/static/leetcode.svg">
+                    </i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="projects" class="projects">
+        <h2 class="section-title">Recent Projects</h2>
+        <div class="projects-grid">
+            
+            <div class="projects-card">
+                <img src="/portfolio/static/medibot.png" alt="">
+                <h3>MediBot</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos, praesentium alias, quibusdam perferendis suscipit, animi nesciunt deserunt neque pariatur nobis unde provident doloremque? Rerum error sequi, rem sed quam exercitationem.</p>
+                <div class="btn-group">
+                    <div class="btn">Live Demo</div>
+                    <div class="btn">Github Repo</div> 
+                </div>
+            </div>
+
+            <div class="projects-card">
+                <img src="/portfolio/static/pathshala.png" alt="">
+                <h3>Pathshala</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos, praesentium alias, quibusdam perferendis suscipit, animi nesciunt deserunt neque pariatur nobis unde provident doloremque? Rerum error sequi, rem sed quam exercitationem.</p>
+                <div class="btn-group">
+                    <div class="btn">Live Demo</div>
+                    <div class="btn">Github Repo</div> 
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="input-box">
+            <h2 class="section-title">Contact Me</h2>
+            <div class="input">
+                <input type="text" class="textArea" placeholder="example@gmail.com">
+                <i class="fa-solid fa-envelope"></i>
+            </div>
+
+            <div class="btn" onclick="contactMe()">Submit</div>
+        </div>
+    </section>
+
+
+    <footer>
+        <ul class="footer-section">
+            <li>
+                <a href="#about">About</a>
+            </li>
+
+            <li>
+                <a href="#projects">Projects</a>
+            </li>
+
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+        </ul>
+
+
+        <p class="copyright">© All Rights Reserved | Sainath Machha</p>
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
